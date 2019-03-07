@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UIImage {
+public extension UIImage {
     func imageWithOrientationFixed() -> UIImage? {
         switch imageOrientation {
         case .up:

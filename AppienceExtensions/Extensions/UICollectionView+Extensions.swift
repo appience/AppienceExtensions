@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UICollectionView {
+public extension UICollectionView {
     func registerNib<T: UICollectionViewCell>(_: T.Type) {
         let stringRepresenation:String = String(describing: T.self)
         self.register(UINib(nibName: stringRepresenation, bundle: nil), forCellWithReuseIdentifier: T.identifier())

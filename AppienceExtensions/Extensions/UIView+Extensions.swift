@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UIView {
+public extension UIView {
 
     func roundedCorners(_ radius: CGFloat) {
         self.layer.cornerRadius = radius

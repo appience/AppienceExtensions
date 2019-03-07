@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UIViewController {
+public extension UIViewController {
 
     static func createInstanceFromStoryboard<T:UIViewController>(identifier:String? = nil, storyBoardName:String? = nil) -> T {
         let className:String = String(describing: T.self)

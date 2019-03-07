@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UICollectionReusableView {
+public extension UICollectionReusableView {
     class func identifier() -> String {
         return String(describing: self) + "Identifier"
     }

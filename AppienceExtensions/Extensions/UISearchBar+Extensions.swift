@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UISearchBar {
+public extension UISearchBar {
     func getViewElements<T>(type: T.Type) -> [T]? {
         let svs = subviews.flatMap { $0.subviews }
         guard let element = (svs.filter { $0 is T }) as? [T] else { return nil }

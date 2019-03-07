@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension Date {
+public extension Date {
     func since() -> String {
         let now:Date = Date()
         

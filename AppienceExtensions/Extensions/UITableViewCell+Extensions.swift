@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UITableViewCell {
+public extension UITableViewCell {
     class func identifier() -> String {
         return String(describing: self) + "Identifier"
     }
