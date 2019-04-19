@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol ScrollViewCustomHorizontalPageSize: UIScrollViewDelegate {
+public protocol ScrollViewCustomHorizontalPageSize: UIScrollViewDelegate {
     /// Custom page size
     var pageSize: CGFloat { get }
     
@@ -26,7 +26,7 @@ protocol ScrollViewCustomHorizontalPageSize: UIScrollViewDelegate {
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>)
 }
 
-extension ScrollViewCustomHorizontalPageSize {
+public extension ScrollViewCustomHorizontalPageSize {
     func getCurrentPage(scrollView: UIScrollView) -> CGFloat {
         return (scrollView.contentOffset.x + scrollView.contentInset.left) / pageSize
     }
