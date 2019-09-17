@@ -7,7 +7,7 @@
 //
 
 import UIKit
-open struct FlowConfigure {
+public struct FlowConfigure {
     
     enum FlowType {
         case Main
