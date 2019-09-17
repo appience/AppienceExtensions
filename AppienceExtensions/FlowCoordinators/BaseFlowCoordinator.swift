@@ -7,7 +7,7 @@
 //
 
 import UIKit
-public struct FlowConfigure {
+open struct FlowConfigure {
     
     enum FlowType {
         case Main
@@ -24,7 +24,7 @@ public struct FlowConfigure {
     }
 }
 
-public class BaseFlowCoordinator {
+open class BaseFlowCoordinator {
     
     let configure:FlowConfigure
     
