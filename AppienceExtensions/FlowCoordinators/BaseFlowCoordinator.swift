@@ -1,13 +1,13 @@
 //
 //  BaseFlowCoordinator.swift
-//  Spice
+//  AppienceExtensions
 //
 //  Created by Jan Lipmann on 05/03/2019.
 //  Copyright © 2019 Appience. All rights reserved.
 //
 
 import UIKit
-struct FlowConfigure {
+public struct FlowConfigure {
     
     enum FlowType {
         case Main
@@ -24,7 +24,7 @@ struct FlowConfigure {
     }
 }
 
-class BaseFlowCoordinator {
+public class BaseFlowCoordinator {
     
     let configure:FlowConfigure
     
