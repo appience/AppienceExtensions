@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
     spec.name         = 'AppienceExtensions'
     spec.version      = '0.1.1'
-    s.swift_version   = '5.0'
+    spec.swift_version   = '5.0'
     spec.platform     = :ios , '10.0'
     spec.license      = { :type => 'BSD' }
     spec.homepage     = 'https://github.com/appience/AppienceExtensions'
