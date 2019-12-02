@@ -8,5 +8,5 @@ Pod::Spec.new do |spec|
     spec.authors      = { 'Jan Lipmann' => 'jan@appience.com' }
     spec.summary      = 'Swift exensions'
     spec.source       = { :git => 'https://github.com/appience/AppienceExtensions.git' }
-    spec.source_files = 'AppienceExtensions/Extensions/*','AppienceExtensions/Protocols/*'
+    spec.source_files = 'AppienceExtensions/Extensions/*','AppienceExtensions/Protocols/*','AppienceExtensions/FlowCoordinator/*'
   end

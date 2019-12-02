@@ -24,6 +24,7 @@
 		111C70A222317C3400821769 /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111C709422317C3400821769 /* UITextField+Extensions.swift */; };
 		111C70A422317C7200821769 /* AppienceExtensions.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 111C70A322317C7200821769 /* AppienceExtensions.podspec */; };
 		1159D3F22269CE5C007201DE /* ScrollViewCustomHorizontalPageSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1159D3F12269CE5C007201DE /* ScrollViewCustomHorizontalPageSize.swift */; };
+		1173A746239588C700143EDD /* FlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1173A745239588C700143EDD /* FlowCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		111C709422317C3400821769 /* UITextField+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
 		111C70A322317C7200821769 /* AppienceExtensions.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AppienceExtensions.podspec; sourceTree = "<group>"; };
 		1159D3F12269CE5C007201DE /* ScrollViewCustomHorizontalPageSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewCustomHorizontalPageSize.swift; sourceTree = "<group>"; };
+		1173A745239588C700143EDD /* FlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		111C703E22317BCF00821769 /* AppienceExtensions */ = {
 			isa = PBXGroup;
 			children = (
+				1173A744239588C700143EDD /* FlowCoordinator */,
 				111C708622317C3400821769 /* Extensions */,
 				1159D3F32269CE5F007201DE /* Protocols */,
 				111C703F22317BCF00821769 /* AppienceExtensions.h */,
@@ -114,6 +117,14 @@
 				1159D3F12269CE5C007201DE /* ScrollViewCustomHorizontalPageSize.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		1173A744239588C700143EDD /* FlowCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				1173A745239588C700143EDD /* FlowCoordinator.swift */,
+			);
+			path = FlowCoordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +220,7 @@
 				111C709522317C3400821769 /* UIViewController+Extensions.swift in Sources */,
 				111C709F22317C3400821769 /* UITableViewCell+Extensions.swift in Sources */,
 				111C709D22317C3400821769 /* UIStoryboard+Extensions.swift in Sources */,
+				1173A746239588C700143EDD /* FlowCoordinator.swift in Sources */,
 				111C70A122317C3400821769 /* UICollectionView+Extensions.swift in Sources */,
 				111C709A22317C3400821769 /* UIDevice+Extensions.swift in Sources */,
 				111C709C22317C3400821769 /* UICollectionReusableView+Extensions.swift in Sources */,
