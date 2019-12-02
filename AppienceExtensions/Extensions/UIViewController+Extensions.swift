@@ -18,7 +18,7 @@ public extension UIViewController {
         return instance
     }
     
-    static func createinstanceFromXIB<T:UIViewController>(nibName:String?) -> T {
+    static func createinstanceFromXIB<T:UIViewController>(nibName:String? = nil) -> T {
         let className:String = String(describing: T.self)
         let instance:T = T(nibName: nibName ?? className, bundle: nil)
         return instance
