@@ -10,15 +10,20 @@ import UIKit
 
 public struct FlowConfigure {
     
-    enum FlowType {
+    public enum FlowType {
         case Main
         case Navigation
     }
     
-    let window: UIWindow?
-    let navigationController: UINavigationController?
+    public let window: UIWindow?
+    public let navigationController: UINavigationController?
     
-    func whichFlowIam() -> FlowType? {
+    public init(window:UIWindow?, navigationController:UINavigationController?) {
+        self.window = window
+        self.navigationController = navigationController
+    }
+    
+    public func whichFlowIam() -> FlowType? {
         if window != nil { return .Main }
         if navigationController != nil { return .Navigation }
         return nil
