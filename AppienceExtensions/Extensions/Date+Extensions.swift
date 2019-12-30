@@ -41,10 +41,14 @@ public extension Date {
         return "\(years)y"
     }
     
-    init(dateString: String, format: String) {
+    init(dateString: String, format: String, locale:Locale? = nil, timeZone:TimeZone? = nil) {
         let formatter = DateFormatter()
-        formatter.locale = Locale(identifier: "en_US")
-        formatter.timeZone = TimeZone(secondsFromGMT: 0)
+        if let locale = locale {
+            formatter.locale = locale
+        }
+        if let timeZone = timeZone {
+            formatter.timeZone = timeZone
+        }
         formatter.dateFormat = format
         
         guard let date = formatter.date(from: dateString) else {
@@ -54,14 +58,18 @@ public extension Date {
         self = date
     }
     
-    func string(_ format:String? = nil) -> String {
+    func string(_ format:String? = nil, locale:Locale? = nil, timeZone:TimeZone? = nil) -> String {
         let formatter = DateFormatter()
-        formatter.locale = Locale(identifier: "en_US")
-        formatter.timeZone = TimeZone(secondsFromGMT: 0)
         if format == nil  {
             formatter.dateStyle = .medium
         } else {
             formatter.dateFormat = format
+        }
+        if let locale = locale {
+            formatter.locale = locale
+        }
+        if let timeZone = timeZone {
+           formatter.timeZone = timeZone
         }
         return formatter.string(from: self)
     }
