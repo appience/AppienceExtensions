@@ -28,9 +28,16 @@ public extension UIView {
         self.roundedCorners(radius)
     }
     
-    func makeRoundedVerticalEdges() {
-        let radius:CGFloat = self.frame.height/2
-        self.roundedCorners(radius)
+    func dropShadow(width:CGFloat = 0, height:CGFloat = 4.0, opacity:CGFloat = 1.0, maskToBounds:Bool = false, radius:CGFloat = 3.0, color:UIColor = UIColor.black.withAlphaComponent(0.1)) {
+        self.layer.shadowColor = color.cgColor
+        self.layer.shadowOffset = CGSize(width: width, height: height)
+        self.layer.shadowRadius = radius
+        self.layer.shadowOpacity = Float(opacity)
+        self.layer.masksToBounds = maskToBounds
+    }
+    
+    func clearShadow() {
+        dropShadow(width: 0, height: 0, opacity: 0, maskToBounds: true, radius: 0)
     }
     
     func shake() {
