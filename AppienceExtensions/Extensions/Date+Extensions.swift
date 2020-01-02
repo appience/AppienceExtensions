@@ -58,7 +58,7 @@ public extension Date {
         self = date
     }
     
-    func string(_ format:String? = nil, locale:Locale? = nil, timeZone:TimeZone? = nil) -> String {
+    func string(format:String? = nil, locale:Locale? = nil, timeZone:TimeZone? = nil) -> String {
         let formatter = DateFormatter()
         if format == nil  {
             formatter.dateStyle = .medium
