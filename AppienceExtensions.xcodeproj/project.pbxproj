@@ -24,6 +24,7 @@
 		111C70A222317C3400821769 /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111C709422317C3400821769 /* UITextField+Extensions.swift */; };
 		111C70A422317C7200821769 /* AppienceExtensions.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 111C70A322317C7200821769 /* AppienceExtensions.podspec */; };
 		1159D3F22269CE5C007201DE /* ScrollViewCustomHorizontalPageSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1159D3F12269CE5C007201DE /* ScrollViewCustomHorizontalPageSize.swift */; };
+		117345F023C3C75700031A78 /* UITableViewHeaderFooterView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117345EF23C3C75700031A78 /* UITableViewHeaderFooterView+Extensions.swift */; };
 		1173A746239588C700143EDD /* FlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1173A745239588C700143EDD /* FlowCoordinator.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		111C709422317C3400821769 /* UITextField+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
 		111C70A322317C7200821769 /* AppienceExtensions.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AppienceExtensions.podspec; sourceTree = "<group>"; };
 		1159D3F12269CE5C007201DE /* ScrollViewCustomHorizontalPageSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewCustomHorizontalPageSize.swift; sourceTree = "<group>"; };
+		117345EF23C3C75700031A78 /* UITableViewHeaderFooterView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewHeaderFooterView+Extensions.swift"; sourceTree = "<group>"; };
 		1173A745239588C700143EDD /* FlowCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,6 +106,7 @@
 				111C708F22317C3400821769 /* UIStoryboard+Extensions.swift */,
 				111C709022317C3400821769 /* UITableView+Extensions.swift */,
 				111C709122317C3400821769 /* UITableViewCell+Extensions.swift */,
+				117345EF23C3C75700031A78 /* UITableViewHeaderFooterView+Extensions.swift */,
 				111C709222317C3400821769 /* Date+Extensions.swift */,
 				111C709322317C3400821769 /* UICollectionView+Extensions.swift */,
 				111C709422317C3400821769 /* UITextField+Extensions.swift */,
@@ -211,6 +214,7 @@
 				111C709622317C3400821769 /* UIView+Extensions.swift in Sources */,
 				111C709822317C3400821769 /* Collection+Extension.swift in Sources */,
 				111C709922317C3400821769 /* UIImage+Extensions.swift in Sources */,
+				117345F023C3C75700031A78 /* UITableViewHeaderFooterView+Extensions.swift in Sources */,
 				111C709B22317C3400821769 /* UISearchBar+Extensions.swift in Sources */,
 				111C709722317C3400821769 /* String+Extensions.swift in Sources */,
 				111C70A022317C3400821769 /* Date+Extensions.swift in Sources */,

@@ -14,6 +14,11 @@ public extension UITableView {
         self.register(UINib(nibName: stringRepresenation, bundle: nil), forCellReuseIdentifier: T.identifier())
     }
     
+    func registerSectionHeader<T:UITableViewHeaderFooterView>(_: T.Type) {
+        let stringRepresenation:String = String(describing: T.self)
+        self.register(UINib(nibName: stringRepresenation, bundle: nil), forHeaderFooterViewReuseIdentifier: T.identifier())
+    }
+    
     func dequeueCell<T:UITableViewCell>(_: T.Type, forIndexPath indexPath:IndexPath) -> T {
         return dequeueReusableCell(withIdentifier: T.identifier(), for: indexPath) as! T
     }
