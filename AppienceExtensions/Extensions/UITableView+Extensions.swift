@@ -23,7 +23,7 @@ public extension UITableView {
         return dequeueReusableCell(withIdentifier: T.identifier(), for: indexPath) as! T
     }
     
-    func dequeueSectionHeader<T:UITableViewHeaderFooterView>(_: T.Type, forIndexPath indexPath:IndexPath) -> T {
+    func dequeueSectionHeader<T:UITableViewHeaderFooterView>(_: T.Type) -> T {
         return dequeueReusableHeaderFooterView(withIdentifier: T.identifier()) as! T
     }
 }
