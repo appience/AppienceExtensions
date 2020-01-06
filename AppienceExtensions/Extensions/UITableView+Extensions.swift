@@ -22,4 +22,8 @@ public extension UITableView {
     func dequeueCell<T:UITableViewCell>(_: T.Type, forIndexPath indexPath:IndexPath) -> T {
         return dequeueReusableCell(withIdentifier: T.identifier(), for: indexPath) as! T
     }
+    
+    func dequeueSectionHeader<T:UITableViewHeaderFooterView>(_: T.Type, forIndexPath indexPath:IndexPath) -> T {
+        return dequeueReusableHeaderFooterView(withIdentifier: T.identifier()) as! T
+    }
 }
