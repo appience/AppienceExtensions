@@ -13,6 +13,13 @@ public extension UICollectionView {
         let stringRepresenation:String = String(describing: T.self)
         self.register(UINib(nibName: stringRepresenation, bundle: nil), forCellWithReuseIdentifier: T.identifier())
     }
+
+    func register<T: UICollectionViewCell>(_: T.Type) {
+        register(
+            T.self,
+            forCellWithReuseIdentifier: T.reuseIdentifier
+        )
+    }
     
     func dequeueCell<T:UICollectionViewCell>(_: T.Type, forIndexPath indexPath:IndexPath) -> T {
         return dequeueReusableCell(withReuseIdentifier: T.identifier(), for: indexPath) as! T
