@@ -17,7 +17,7 @@ public extension UICollectionView {
     func register<T: UICollectionViewCell>(_: T.Type) {
         register(
             T.self,
-            forCellWithReuseIdentifier: T.reuseIdentifier
+            forCellWithReuseIdentifier: T.identifier()
         )
     }
     
